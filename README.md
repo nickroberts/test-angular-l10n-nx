@@ -1,4 +1,6 @@
-# Test angular-l10n
+# Test angular-l10n-nx
+
+This project was generated with [nx](https://nx.dev/angular).
 
 This project is to test the lazy loading of modules and their translations.
 
