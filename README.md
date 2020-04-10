@@ -1,4 +1,4 @@
-# Test angular-l10n-nx
+# test-angular-l10n-nx
 
 This project was generated with [nx](https://nx.dev/angular).
 
