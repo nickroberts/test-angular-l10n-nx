@@ -19,3 +19,11 @@ core.js:6189 ERROR Error: Uncaught (in promise): angular-l10n (formatLanguage): 
     at Zone.runTask (zone-evergreen.js:167)
     at drainMicroTaskQueue (zone-evergreen.js:569)
 ```
+
+## Update on Issue
+
+The reason this error shows up, is that the `initialNavigation` property is set to true in the routing options.
+
+If we remove this, it works as expected.
+
+See [apps/ui/src/app/app.module.ts#L65](apps/ui/src/app/app.module.ts#L65)

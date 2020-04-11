@@ -62,7 +62,9 @@ export const routes: Routes = [
       translationLoader: HttpTranslationLoader,
     }),
     L10nIntlModule,
-    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
+    // ! This breaks the lazy loading for angular-l10n when refreshing from a lazy-loaded route
+    // RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
+    RouterModule.forRoot(routes),
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
